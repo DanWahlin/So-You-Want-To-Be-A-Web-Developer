@@ -16,7 +16,7 @@ console.log(mood);
 //Make a "function" that takes a weight AND
 //the amount to lose and calculates the result
 function calcTargetWeight(weight, weightLoss) {
-    var targetWeight = weight - weightLoss;
+    let targetWeight = weight - weightLoss;
     return targetWeight;
 }
 
