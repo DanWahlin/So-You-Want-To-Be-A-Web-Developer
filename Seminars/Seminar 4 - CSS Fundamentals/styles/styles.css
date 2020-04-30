@@ -1,0 +1,15 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header, footer {
+    background-color: lightgray;
+    padding: 10px;
+}
+
+.big-text {
+    color: navy;
+    font-size: 28pt;
+    font-weight: bold;
+}
+
