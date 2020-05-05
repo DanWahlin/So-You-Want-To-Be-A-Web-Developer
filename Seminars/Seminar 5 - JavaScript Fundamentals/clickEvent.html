@@ -14,11 +14,12 @@
         button.addEventListener('click', change);    
         
         // Function to handle when button is clicked
-        function change(e) {      
+        function change(e) {  
             // Find object with an id of "title"
             let title = document.querySelector('#title');     
             // Update the object's text 
-            title.innerText = 'Clicked the Button!';    
+            title.innerText = 'Clicked the Button!'; 
+            // Adding a CSS class dynamically   
             title.classList.add('highlight');
         }
     </script>    

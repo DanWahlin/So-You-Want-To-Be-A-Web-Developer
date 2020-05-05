@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>Hello JavaScript</title>
+</head>
+
+<body> 
+    <!-- HTML comment -->
+    <h1>Hello World</h1>
+    <br>
+    <div id="output"></div>
+    <br>
+    <button id="show-button">Show Name</button>
+    <script>
+        // Step 1: Find button
+        let button = document.querySelector('#show-button');
+
+        // Step 2: Hook up button to our function when it's clicked
+        button.addEventListener('click', showName);
+
+        function showName(e) {
+            let firstName = 'Dan';
+            let lastName = 'Wahlin';
+            // Find the div
+            let div = document.querySelector('#output');
+            div.innerText = firstName + ' ' + lastName;
+            console.log(firstName + ' ' + lastName);
+        }
+    </script>
+</body>
+</html>
