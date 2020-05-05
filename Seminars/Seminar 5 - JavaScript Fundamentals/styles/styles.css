@@ -8,8 +8,18 @@ header, footer {
 }
 
 .big-text {
-    color: navy;
+    color: black;
     font-size: 28pt;
+    font-weight: bold;
+}
+
+img {
+    width: 400px;
+    height: 266px;
+    margin-bottom: 10px;
+}
+
+#product-image-title {
     font-weight: bold;
 }
 
