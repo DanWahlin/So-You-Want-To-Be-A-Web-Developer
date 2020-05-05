@@ -1,3 +1,5 @@
+// NOTE: Using features available in modern browsers (not for Internet Explorer)
+
 // A collection of products. This is called an "array" in JavaScript.
 let products = [
     { title: 'Iceland', path: 'iceland.jpg'}, 
@@ -26,7 +28,7 @@ function showImages() {
 
     // Start a timer that fires every 5 seconds
     // Will change img tag's src attribute
-    setInterval(function() {
+    setInterval(() => {
         selectedProductIndex++;
         if (selectedProductIndex === products.length) {
             selectedProductIndex = 0;
