@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>DOM Node Clicks</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body> 
+    <h1 id="title">H1 DOM Node</h1>
+    <br />
+    <button id="change-btn">Change Title</button>
+    <script>    
+        // Find object with an id of "change-btn"
+        let button = document.querySelector('#change-btn');    
+        // Listen for the object to be clicked
+        button.addEventListener('click', change);    
+        
+        // Function to handle when button is clicked
+        function change(e) {      
+            // Find object with an id of "title"
+            let title = document.querySelector('#title');     
+            // Update the object's text 
+            title.innerText = 'Clicked the Button!';    
+            title.classList.add('highlight');
+        }
+    </script>    
+</body>
+</html>

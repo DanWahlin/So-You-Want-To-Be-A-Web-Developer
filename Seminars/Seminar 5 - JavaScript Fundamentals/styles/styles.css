@@ -17,3 +17,7 @@ header, footer {
     border: 3px solid #efefef;
 }
 
+.highlight {
+    background-color: yellow;
+}
+

@@ -1,0 +1,18 @@
+<html>
+<head>
+    <title>Updating the DOM</title>
+</head>
+<body> 
+    <h1 id="title">DOM Element</h1>
+    <br />
+    <div id="output"></div>
+    <script>    
+        // Locate a tag with an id of "title"
+        var title = document.querySelector('#title'); 
+
+        // Locate a tag with an id of "output"
+        var output = document.querySelector('#output');
+        output.innerText = 'h1 tag text is: ' + title.innerText;
+    </script>    
+</body>
+</html>
