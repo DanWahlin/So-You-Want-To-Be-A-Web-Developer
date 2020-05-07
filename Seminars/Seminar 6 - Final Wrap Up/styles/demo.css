@@ -1,0 +1,13 @@
+header, footer {
+    padding: 10px;
+    background-color: #efefef;
+}
+
+header h1 {
+    font-size: 16pt;
+    color: navy;
+}
+
+main {
+    margin-left: 20px;
+}
