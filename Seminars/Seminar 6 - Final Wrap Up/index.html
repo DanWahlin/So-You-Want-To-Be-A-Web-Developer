@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title>This is my page!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/css/bootstrap.css">
+    <link rel="stylesheet" href="styles/styles.css">
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <h1 class="big-text">Acme Travel</h1>
+
+        <img id="product-image" alt="Picture of forest">
+        <div id="product-image-title"></div>
+        <br>
+
+        <div>
+            We sell the best travel packages! Travel to:
+        </div>
+
+        <ul id="products"></ul>
+    </main>
+
+    <footer class="fixed-bottom">
+        &copy; 2020
+    </footer>
+
+    <!-- Load the JavaScript file that will show products and update the image -->
+    <script src="scripts/app.js"></script>
+    <script>
+        // Call the functions so that they perform their intended action
+        showProducts();
+        showImages();
+    </script>
+    
+</body>
+</html>

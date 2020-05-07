@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #0e76c9;
+    padding: 10px;
+}
+
+footer {
+    background-color: #efefef;
+    padding: 10px;
+}
+
+nav {
+    margin-left:20px;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+}
+
+.big-text {
+    color: black;
+    font-size: 28pt;
+    font-weight: bold;
+}
+
+img {
+    width: 400px;
+    height: 266px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+#product-image-title {
+    font-weight: bold;
+}
+
+#main-content {
+    margin: 20px;
+}
+
+.highlight {
+    background-color: yellow;
+}
+

@@ -1,0 +1,64 @@
+body {
+    font-family: fantasy;
+    margin:0px auto;
+    text-align:center;
+    background-color: black;
+    color: white;
+}
+
+.logo {
+  margin-top: 15px;
+}
+
+.link {
+  z-index: 1000;
+  position: absolute;
+  left:50px;
+}
+
+.zelda {
+  z-index: 1000;
+  position: absolute;
+  left: 60vw;
+}
+
+.animate-5s, .animate-3s {
+  animation-name: move-up-down;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.animate-3s {
+  animation-duration: 3s;
+}
+
+.animate-5s {
+  animation-duration: 5s;
+}
+
+@keyframes move-up-down {
+  from {
+    top: 0px;
+  }
+
+  to {
+    top: 55px;
+  }
+}
+
+.video-wrapper {
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.video-wrapper video {
+  opacity: 0.3;
+  height: 100%;
+  width: 177.77777778vh; /* 100 * 16 / 9 */
+  min-width: 100%;
+  min-height: 56.25vw; /* 100 * 9 / 16 */
+}

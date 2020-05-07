@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <title>Buy a Travel Package</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/css/bootstrap.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <h1 class="big-text">Purchase Trip</h1>
+        <div id="purchase-container">
+            <img id="product-image">
+            <div id="product-image-title"></div>
+            <br>
+
+            <div>
+                Purchase your trip!
+            </div>
+
+            <div id="travel-dest"></div>
+            <br>
+            <a href="purchased.html" class="btn btn-success">Buy <span id="price"></span></a>
+        </div>
+    </main>
+
+    <footer class="fixed-bottom">
+        &copy; 2020
+    </footer>
+
+    <!-- Load the JavaScript file that will show products and update the image -->
+    <script src="scripts/app.js"></script>
+    <script>
+        let urlParams = new URLSearchParams(window.location.search);
+        showTravelDestination(urlParams.get('dest'));
+    </script>
+</body>
+
+</html>
